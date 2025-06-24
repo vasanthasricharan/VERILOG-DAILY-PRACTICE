@@ -1,18 +1,22 @@
-module tb;
-  	reg a,b;
-  	wire and_out, or_out, xor_out, nand_out, nor_out, xnor_out, not_out;
-  
-  	logic_gates u1(.and_out(and_out),.or_out(or_out),.xor_out(nand_out),.nand_out(xnor_out),.nor_out(nor_out),.xnor_out(xor_out),.not_out(not_out));
-  
- 	 initial
-   		 begin
-     		a=0; b=0; #10;
-     		a=0; b=1; #10;
-     		a=1; b=0; #10;
-      		a=1; b=1; #10;
-   		 end
- 	 initial
-  		  begin
-      $monitor("a=%b, b=%b, and=%b,or=%b,xor=%b,nand=%b,nor=%b,xnor=%b,not=%b",a,b,and_out,or_out,xor_out,nand_out,nor_out,xnor_out,not_out);
-    end
+module test_and_gate;
+
+reg a, b;
+wire y;
+
+and_gate u1 (
+    .a(a),
+    .b(b),
+    .y(y)
+);
+
+initial begin
+    $display("A B | Y");
+    $display("------");
+    a = 0; b = 0; #10 $display("%b %b | %b", a, b, y);
+    a = 0; b = 1; #10 $display("%b %b | %b", a, b, y);
+    a = 1; b = 0; #10 $display("%b %b | %b", a, b, y);
+    a = 1; b = 1; #10 $display("%b %b | %b", a, b, y);
+    $stop;
+end
+
 endmodule
