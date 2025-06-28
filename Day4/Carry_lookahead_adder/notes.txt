@@ -1,0 +1,11 @@
+1. Faster Addition: CLA reduces delay by computing carries in parallel instead of sequential ripple carry propagation.
+
+2. Uses Generate & Propagate: It uses generate (G = A & B) and propagate (P = A ^ B) signals to determine carries quickly.
+
+3. Carry Lookahead Logic: Computes carries using Boolean expressions without waiting for intermediate carries.
+
+4. High-Speed Design: Suitable for high-performance processors and ALUs requiring fast arithmetic operations.
+
+5. Complexity vs Speed Trade-off: More gates and wiring complexity than ripple carry adder but significantly improved speed.
+
+6. Scalability: Implemented hierarchically (e.g. in 16-bit or 32-bit adders) using multiple CLA blocks for efficient wide addition.
