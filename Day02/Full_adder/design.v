@@ -1,3 +1,4 @@
+//gate-level behavioural model
 module full_adder(
     input A,
     input B,
