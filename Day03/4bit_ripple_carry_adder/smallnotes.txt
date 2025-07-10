@@ -1,9 +1,5 @@
 1. A 4-bit Ripple Carry Adder adds two 4-bit binary numbers using four cascaded full adders.
-
 2. The carry-out of each full adder becomes the carry-in of the next, creating a "ripple" effect.
-
 3. While simple and easy to design, its main drawback is delay, as each bit must wait for the previous carry.
-
 4. It outputs a 4-bit sum and a final carry-out (Cout) indicating overflow.
-
 5. It is a fundamental building block for understanding more advanced adders like carry-lookahead and carry-select adders.
