@@ -1,0 +1,56 @@
+🔹 Definition
+A multiplexer (MUX) selects one input from multiple data inputs and forwards it to a single output line.
+
+8-to-1 MUX has:
+
+8 data inputs: D0 to D7
+
+3 select lines: S2, S1, S0
+
+1 output: Y
+
+🔹 Function
+Based on the 3-bit select input, one of the 8 inputs is connected to the output:
+
+Example: if S = 3'b010, then Y = D2
+
+🔹 Truth Table (Simplified)
+S2 S1 S0	Y
+0  0  0     D0
+0  0  1	    D1
+0  1  0	    D2
+0  1  1	    D3
+1  0  0	    D4
+1  0  1	    D5
+1  1  0	    D6
+1  1  1	    D7
+
+🔹 Applications
+Data routing and selection
+
+Implementing logic functions
+
+Communication systems and ALUs
+
+Control units in CPUs
+
+🔹 Verilog Design Tip
+Can be implemented using:
+
+Ternary operators (compact)
+
+case statements (more readable)
+
+Hierarchical design (using 2-to-1 muxes)
+
+🔹 Formula
+Number of select lines = log₂(N)
+
+For 8 inputs → log₂(8) = 3 select lines
+
+🔹 Common Interview Questions
+How many select lines does an 8:1 MUX need? → 3
+
+Can you design a 4:1 MUX using 2:1 MUXes?
+
+Use an 8:1 MUX to implement logic functions (like majority or parity)
