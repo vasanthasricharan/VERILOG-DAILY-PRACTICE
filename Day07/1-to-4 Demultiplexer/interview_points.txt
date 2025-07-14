@@ -1,0 +1,23 @@
+Important Interview Points
+
+1. Difference between mux and demux
+Mux: Multiple inputs → Single output. (Selector selects input)
+Demux: Single input → Multiple outputs. (Selector selects output line)
+
+2. Application-based questions
+“How is demux used in memory interfacing?”
+➔ Used as a decoder to enable one memory block at a time based on address lines.
+
+3. Implementation in Verilog
+Describe always @(*) combinational block.
+Use case statement or assign statements with continuous assignments for structural style.
+
+4. Difference between decoder and demux
+Decoder has no data input, only decoding outputs based on select lines.
+Demux has data input routed to selected output.
+Practically, demux = decoder + enable/data input.
+
+5. Real-time applications
+Data distribution to peripherals.
+Switching communication lines in time-division multiplexing systems.
+Controlled LED lighting patterns or device enable signals.
