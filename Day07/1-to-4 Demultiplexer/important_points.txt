@@ -1,0 +1,22 @@
+Core Conceptual Points
+
+Definition:
+A 1-to-4 demultiplexer takes 1 input and routes it to one of 4 outputs based on 2 select lines.
+Number of select lines:
+For n outputs, log₂n select lines are required.
+Here, 4 outputs → 2 select lines (00, 01, 10, 11).
+
+Truth Table:
+
+sel1	sel0	Y0	Y1	Y2	Y3
+0	    0	    I	0	0	0
+0	    1	    0	I	0	0
+1	    0	    0	0	I	0
+1	    1	    0	0	0	I
+
+I = input value
+
+Basic use cases:
+Data routing to multiple devices.
+Serial to parallel conversion.
+Address decoding in memory to enable a specific block.
