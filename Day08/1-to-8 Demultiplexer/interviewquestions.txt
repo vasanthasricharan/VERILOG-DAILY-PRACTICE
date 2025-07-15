@@ -1,0 +1,38 @@
+🔷 Interview Questions (Direct & Conceptual)
+✔️ Q1. What is a demultiplexer?
+A circuit that routes a single input to one of several outputs based on select lines.
+
+✔️ Q2. How many select lines are required for 1-to-8 demux?
+3 select lines (since 
+2
+3
+=
+8
+2 
+3
+ =8).
+
+✔️ Q3. Difference between decoder and demux?
+Decoder has no data input; demux has data input and selection lines to route data.
+
+✔️ Q4. Can you implement a demux using decoder?
+Yes, by connecting the data input to enable pins of the decoder (if decoder has enable).
+
+✔️ Q5. What is the practical application of demux in communication?
+Serial to parallel data conversion or distributing a single communication line to multiple destinations.
+
+✔️ Q6. Draw a block diagram for 1-to-8 demux.
+(Practice drawing input D, select lines S2,S1,S0, outputs Y0-Y7 with arrow routed accordingly).
+
+✔️ Q7. Write Verilog code for 1-to-8 demux.
+Refer to the design code I gave you earlier today.
+
+✔️ Q8. What happens if enable is low (in general demux ICs)?
+All outputs are disabled (high impedance or logic high/low depending on IC).
+
+✔️ Q9. How to implement a 1-to-8 demux using 1-to-4 demux?
+Cascade two 1-to-4 demux: first controls enable of two second-stage demux.
+
+✔️ Q10. What is the truth table of 1-to-8 demux?
+(Practice writing: for each combination of select lines, only the corresponding output = D).
+
