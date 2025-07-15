@@ -1,0 +1,53 @@
+🔷 1-to-8 Demultiplexer – Important Points
+✅ Definition:
+A demultiplexer routes a single input to one of many outputs, based on select lines. It acts like a single-pole multi-throw switch in digital circuits.
+
+✅ Inputs & Outputs:
+
+Inputs:
+
+Data input (D): 1 bit
+
+Select lines (S2 S1 S0): 3 bits to select 1 out of 8 outputs
+
+Outputs:
+
+8 outputs (Y0 to Y7), only one is active at a time.
+
+✅ Applications:
+
+Data routing
+
+Memory address decoding
+
+Serial to parallel data conversion
+
+Enabling multiple devices from a single data line
+
+✅ Enable pin (in general demux ICs):
+
+Controls overall functionality (e.g. 74138 has active low enable pins)
+
+✅ Equation:
+For output Y[i],
+𝑌
+[
+𝑖
+]
+=
+𝐷
+⋅
+(
+select condition for i
+)
+Y[i]=D⋅(select condition for i)
+
+✅ IC Example:
+
+74LS138 is a 3-to-8 decoder but can function as 1-to-8 demux by connecting data input to enable pins appropriately.
+
+✅ Difference from Decoder:
+
+Decoder	Demux
+No data input, only select inputs	Has data input + select lines
+Activates output line based on select lines	Routes data input to selected output
