@@ -1,0 +1,25 @@
+Interview Questions (with quick preparation notes)
+Q1. What is an encoder?
+Converts multiple input lines into binary output code.
+
+Q2. Difference between encoder and decoder?
+Encoder: Inputs → Binary code.
+Decoder: Binary code → Activates corresponding output line.
+
+Q3. Why do we need a priority encoder?
+To handle cases when multiple inputs are high by giving priority to the highest order input.
+
+Q4. Write the truth table for a 4-to-2 encoder.
+(Prepare the above truth table quickly.)
+
+Q5. What is the output if no input is high in a 4-to-2 encoder?
+Output is invalid/undefined unless specifically designed to output a default code.
+
+Q6. Where is an encoder used in real life?
+Keyboard circuits, interrupt handling, data compression, communication systems.
+
+Q7. How is a 4-to-2 encoder implemented using gates?
+Using OR gates as per derived equations for outputs.
+
+Q8. Can we use an encoder for decimal to BCD conversion?
+Yes, decimal inputs (0-9) can be encoded into 4-bit BCD output.
