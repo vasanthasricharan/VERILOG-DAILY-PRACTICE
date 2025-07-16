@@ -1,0 +1,39 @@
+Most Important Points – 4-to-2 Encoder
+1. Definition:
+An encoder converts 2^n input lines to n output lines, encoding the position of the active input into binary form.
+
+2. 4-to-2 Encoder Inputs and Outputs:
+
+Inputs: 4 lines (I0, I1, I2, I3)
+
+Outputs: 2 lines (Y1, Y0) representing binary code of active input.
+
+3. Truth Table:
+
+Input	Output
+0001	00
+0010	01
+0100	10
+1000	11
+Others (multiple inputs or none)	undefined / invalid
+
+4. Limitation:
+Standard encoder does not handle multiple inputs being high simultaneously. It outputs invalid or undefined logic.
+
+5. Priority Encoder:
+To handle multiple active inputs, a priority encoder is used, which outputs the highest priority active input.
+
+6. Application:
+Used in keyboard encoding, interrupt request encoding, data compression, and digital systems to minimize wiring.
+
+7. Equation:
+For a 4-to-2 encoder,
+
+Y1 = I2 + I3
+
+Y0 = I1 + I3
+
+(This is for logic design; behavioral design often uses case statements.)
+
+8. Implementation:
+Implemented using logic gates, multiplexers, or behavioral Verilog code.
