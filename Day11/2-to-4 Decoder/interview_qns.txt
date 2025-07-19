@@ -1,0 +1,30 @@
+💡 Top Interview Questions
+✅ Basic Level
+
+What is a decoder? How does a 2-to-4 decoder work?
+
+Write the truth table for a 2-to-4 decoder.
+
+What happens if enable is low in a decoder?
+
+Differentiate between decoder and demux.
+
+✅ Intermediate Level
+
+How can you implement a 3-to-8 decoder using 2-to-4 decoders? Explain the cascading approach.
+
+Draw the logic circuit diagram for a 2-to-4 decoder with enable.
+
+Explain the behavioral vs structural coding styles for a decoder in Verilog.
+
+Why are decoders used in memory systems?
+
+✅ Advanced / System Design Level
+
+How will you design a 4-to-16 decoder using 2-to-4 decoders?
+
+Can a decoder be used to implement combinational logic circuits? Explain with an example.
+
+How does propagation delay vary in large decoders and how is it minimized?
+
+Implement a 2-to-4 decoder using only NAND gates.
