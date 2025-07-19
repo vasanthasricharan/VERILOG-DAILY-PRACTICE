@@ -1,0 +1,44 @@
+⭐ Important Points (2-to-4 Decoder)
+Definition:
+A 2-to-4 decoder converts 2 input lines to 4 unique outputs, with only one output active at a time, depending on input combination.
+
+Inputs & Outputs:
+
+Inputs: 2 selection lines (in[1:0]) + optional enable input
+
+Outputs: 4 outputs, each representing one minterm.
+
+Enable Signal Function:
+When enable (en) is 0, all outputs are deactivated (logic 0). When en is 1, the decoder operates normally.
+
+Logic Equation:
+For outputs Y0 to Y3:
+
+Y0 = ~in[1] & ~in[0] & en
+
+Y1 = ~in[1] & in[0] & en
+
+Y2 = in[1] & ~in[0] & en
+
+Y3 = in[1] & in[0] & en
+
+Applications:
+
+Memory address decoding
+
+Instruction decoding
+
+Peripheral selection in microprocessor systems
+
+Implementation Types:
+
+Behavioral (using case)
+
+Structural (using AND, NOT, and enable gates)
+
+Expansion:
+Larger decoders can be built using smaller decoders with enable inputs (e.g. 3-to-8 decoder using two 2-to-4 decoders).
+
+Difference from Demultiplexer:
+A decoder converts binary input to unique outputs; a demux routes a data input to one of the outputs based on select lines.
+
