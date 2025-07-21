@@ -1,0 +1,38 @@
+💡 Common Interview Questions
+✅ Q1. What is a decoder?
+
+A combinational circuit that converts binary information from ‘n’ input lines to a maximum of 2^n unique output lines.
+
+✅ Q2. How many outputs will a 3-to-8 decoder have?
+
+8 outputs (since 2^3 = 8).
+
+✅ Q3. Why is an enable input used in decoders?
+
+To control when the decoder is active. It allows multiple decoders to be connected in hierarchical designs without output conflicts.
+
+✅ Q4. How can you implement a 3-to-8 decoder using two 2-to-4 decoders?
+
+Use one input as enable for the two 2-to-4 decoders.
+
+Use remaining two inputs as actual inputs to both decoders.
+
+Connect the third input to enable one decoder at a time, effectively expanding from 2-to-4 to 3-to-8.
+
+✅ Q5. What is the difference between decoder and demultiplexer?
+
+Decoder: Converts binary input to a one-hot output.
+
+Demultiplexer: Routes a single data input to one of many outputs based on select lines. Functionally similar but differs in usage context (data distribution vs code conversion).
+
+✅ Q6. Can a decoder be used as a demultiplexer?
+
+Yes, by adding a data input line as an AND gate input to each output.
+
+✅ Q7. Draw the logic diagram for a 3-to-8 decoder.
+
+(Prepare its diagram with three inputs (A,B,C), eight AND gates each receiving specific combinations with enable.)
+
+✅ Q8. Where are decoders used in microprocessors?
+
+In instruction decoding and address decoding for selecting memory locations or I/O devices.
