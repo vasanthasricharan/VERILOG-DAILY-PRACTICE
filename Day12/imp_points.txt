@@ -1,0 +1,31 @@
+📌 Important Points (Conceptual)
+Definition: A 3-to-8 decoder has 3 input lines and 8 output lines. It activates one output corresponding to the binary value of the inputs when enabled.
+
+Enable Input: Often included to control whether the decoder is active; when disabled, all outputs remain zero (or inactive).
+
+Output Behavior:
+
+If input is n, output n is high (1) and all others are low (0).
+
+Active high vs active low outputs based on design requirements.
+
+Equation-Based Realization: Each output is a minterm function of inputs and enable:
+
+For example, Y0 = ~A * ~B * ~C * En
+
+Applications:
+
+Memory address decoding
+
+Data demultiplexing
+
+Instruction decoding in CPUs
+
+General Formula:
+
+An n-to-2^n decoder has n inputs and 2^n outputs.
+
+Implementation:
+
+Constructed using AND gates and NOT gates for each minterm.
+
