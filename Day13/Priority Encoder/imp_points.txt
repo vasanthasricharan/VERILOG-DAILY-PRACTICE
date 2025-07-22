@@ -1,0 +1,40 @@
+⭐ 📌 Important Points
+Definition:
+A priority encoder outputs the binary representation of the highest-priority active input. It resolves conflicts when multiple inputs are high.
+
+Priority Mechanism:
+
+The highest numbered input has priority in standard designs (e.g. input[7] over input[0] in 8-to-3 encoder).
+
+Priority can be MSB-first or LSB-first based on design specification.
+
+Output Bits:
+
+For N inputs, it produces log2(N) bits at the output.
+
+Valid Signal:
+Often included to indicate if any input is active (valid=0 if no input is high).
+
+casex/casez usage:
+
+casex: treats ‘x’ and ‘z’ as don't care.
+
+casez: treats only ‘z’ as don’t care.
+Use them carefully to match intended priority conditions.
+
+Difference from normal encoder:
+An encoder assumes only one input is active, whereas a priority encoder handles multiple active inputs and resolves based on priority.
+
+Applications:
+
+Interrupt controllers (resolving highest priority interrupt request)
+
+Bus arbitration
+
+Multiplexed data decoding
+
+Synthesis considerations:
+Encoders are synthesizable but may infer large combinational priority logic for wide inputs, impacting timing.
+
+Hazards:
+Ensure inputs are stable during encoding to avoid glitches in outputs.
