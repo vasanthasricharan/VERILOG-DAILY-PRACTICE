@@ -1,0 +1,33 @@
+⭐ 💡 Common Interview Questions
+✅ Basic
+
+What is a priority encoder?
+
+How is a priority encoder different from a normal encoder?
+
+Why is a valid output used in a priority encoder?
+
+✅ Intermediate
+
+Design a 4-to-2 priority encoder with LSB having highest priority.
+
+Explain the use of casex and casez in Verilog priority encoders.
+
+How do you handle the condition when no input is active in an encoder design?
+
+✅ Advanced
+
+How would you design a generic N-to-log2(N) priority encoder using generate loops?
+
+What are the timing implications of a wide (e.g. 32-to-5) priority encoder on a high-speed design?
+
+How can you implement a priority encoder using structural design with gates only?
+
+✅ Application-based
+
+Where are priority encoders used in interrupt controllers? Explain with an example.
+
+How would you implement a priority encoder in a pipelined architecture to meet timing requirements?
+
+If two inputs have the same priority, how would you modify your encoder to resolve it fairly?
+
