@@ -1,0 +1,20 @@
+🎯 Most Important Interview Questions (2-bit Comparator)
+What is a comparator and why is it used in digital circuits?
+
+How would you implement a 2-bit comparator using logic gates?
+
+What is the difference between behavioral and structural modeling for comparators?
+
+If A=10 and B=01, what should be the output?
+
+How many comparisons are needed in a 2-bit comparator? Explain logically.
+
+How do you extend a 2-bit comparator to a 4-bit or 8-bit comparator?
+
+Can you write the truth table for a 2-bit comparator?
+
+Explain the logic equation for equality output in a 2-bit comparator.
+
+What will happen if both inputs are equal? Which output line is high?
+
+Where are comparators used in processors or embedded systems?
