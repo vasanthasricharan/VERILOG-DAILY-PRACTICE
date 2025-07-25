@@ -1,0 +1,50 @@
+✅ Important Points – 4-bit Comparator
+1) Definition
+A 4-bit comparator compares two 4-bit binary numbers and determines their relative magnitude (greater, less, equal).
+
+2) Inputs and Outputs
+
+Inputs: Two 4-bit numbers (A[3:0], B[3:0])
+
+Outputs:
+
+gt (A > B)
+
+lt (A < B)
+
+eq (A == B)
+
+3) Logic Approach
+
+Compare MSB first (bit 3).
+
+If equal, check next lower bits (bit 2, bit 1, bit 0) sequentially.
+
+First non-equal bit determines the result.
+
+4) Number of Combinations
+
+16 (A) x 16 (B) = 256 possible input combinations.
+
+5) Design Styles
+
+Behavioral design using if-else conditions.
+
+Structural design using gate-level implementation:
+
+XOR, AND, OR gates for equality and comparison logic.
+
+6) Cascading Comparators
+
+For >4-bit comparisons (8-bit, 16-bit), cascade smaller comparators using greater than, less than, equal inputs and outputs.
+
+7) Applications
+
+Processors for data comparison
+
+Sorting circuits
+
+Address decoding in memory
+
+Control logic decision making
+
