@@ -1,0 +1,24 @@
+🎯 Most Important Interview Questions (4-bit Comparator)
+What is a 4-bit comparator and where is it used?
+
+How does a 4-bit comparator differ from a 2-bit comparator in terms of design complexity?
+
+Explain the logic for implementing a 4-bit comparator using gates.
+
+What is the logic equation for equality output in a 4-bit comparator?
+
+How many combinations are there in a 4-bit comparator and why?
+
+How can you extend a 4-bit comparator to design an 8-bit comparator?
+
+If A=1010 and B=1100, what will be the outputs?
+
+What is cascading in comparators? Explain with an example.
+
+Why do we compare MSB first while designing comparators?
+
+Explain the structural design approach for a 4-bit comparator.
+
+How can you use a 1-bit comparator to build a 4-bit comparator structurally?
+
+Why are comparators important in digital systems and VLSI design?
