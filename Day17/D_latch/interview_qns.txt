@@ -1,0 +1,55 @@
+🎯 Common Interview Questions (with Explanations)
+1. What is a D latch? How is it different from a D flip-flop?
+D Latch is level-sensitive (transparent when E=1).
+
+D Flip-Flop is edge-triggered (captures data only on clock edge).
+
+2. Why is it called a "transparent" latch?
+When E = 1, the output Q follows input D directly — like "transparent glass".
+
+When E = 0, the output "latches" (holds) the last value.
+
+3. How do you implement a D latch using gates?
+Use NOT, AND, and NOR gates.
+
+Logic: Generate S and R signals from E and D, feed into SR latch.
+
+4. Can a D latch cause timing issues in digital circuits?
+Yes. Since it's level-sensitive, it can transparently pass glitches during E=1 phase.
+
+Also can lead to race conditions in improper designs.
+
+5. What happens if the Enable signal toggles too fast?
+The latch may not reliably hold the correct value.
+
+Can lead to metastability or glitches in Q output.
+
+6. How to avoid glitches in latch-based designs?
+Use clock gating, clean enable signals, or convert to flip-flop if edge control is needed.
+
+7. Where are D latches used in real hardware?
+Low-power pipelines
+
+Transparent registers in memory design
+
+Gated clocks
+
+Fast FSMs where full flip-flop cycles are too slow
+
+8. What is the initial state of Q and Qbar in simulation?
+If not initialized, Q and Qbar are x (unknown).
+
+You should initialize explicitly in behavioral models (e.g., reg Q = 0).
+
+9. Write a Verilog behavioral code for a D latch.
+(Already covered above; important for practical interviews)
+
+10. How is a D latch made from an SR latch?
+D and E are used to generate S and R:
+
+S = E & D
+
+R = E & ~D
+
+Feed these into SR latch (with S-R=1 avoided)
+
