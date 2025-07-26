@@ -1,0 +1,15 @@
+✅ Important Points about D Latch
+Feature	Description
+Full Name	Data Latch or Transparent Latch
+Type	Level-sensitive (not edge-triggered)
+Inputs	D (Data), E (Enable or Clock)
+Outputs	Q, Q̅ (Qbar)
+Behavior	- When E=1: Q = D (transparent)
+- When E=0: Q holds previous value
+Use Case	Temporary data storage, latch-based FSMs, low-power designs
+Level Sensitivity	Sensitive to level of clock (Enable) not edge
+Built From	SR latch + logic to avoid invalid state
+Problem Solved	Eliminates the invalid condition of SR latch (S=R=1)
+Not Edge-Triggered	Can lead to glitches if not carefully controlled
+Synchronous or Asynchronous?	Generally used in asynchronous or level-sensitive systems
+Glitch Risk	Yes, if E (enable) is not clean or has bouncing edges
