@@ -1,0 +1,52 @@
+✅ Important Points on JK Flip-Flop
+Edge-Triggered Device
+
+Usually triggered on positive or negative edge of the clock.
+
+Inputs:
+
+J: Set input
+
+K: Reset input
+
+Output:
+
+Q and Q' (complement of Q)
+
+Characteristic Table:
+
+J	K	Q(next)	Description
+0	0	Q	No change
+0	1	0	Reset
+1	0	1	Set
+1	1	~Q	Toggle (complement)
+
+Race Around Condition:
+
+Occurs when both J = 1 and K = 1 and the clock pulse is high long enough for Q to toggle more than once.
+
+Resolved using edge triggering or Master-Slave configuration.
+
+Applications:
+
+Counters (e.g., ripple counter)
+
+Registers
+
+Frequency division
+
+Memory elements
+
+Comparison with Other Flip-Flops:
+
+RS: Unstable for R=S=1
+
+D: Single input; simpler
+
+T: Toggle flip-flop, derived from JK (J=K=1)
+
+
+📝 Quick Revision Tip
+Characteristic Equation:
+                        Qnext = JQbar + KbarQ
+This tells how the next state depends on J, K, and the current state.
