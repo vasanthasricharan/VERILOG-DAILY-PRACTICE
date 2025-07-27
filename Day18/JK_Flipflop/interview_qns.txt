@@ -1,0 +1,37 @@
+🎯 Interview Questions – JK Flip-Flop
+🔹 Basic Level
+What is a JK flip-flop?
+
+Why is it called a "universal flip-flop"?
+
+How does a JK flip-flop differ from an SR flip-flop?
+
+Explain the toggle condition in a JK flip-flop.
+
+What happens when both J and K are 1?
+
+What is the truth table of a JK flip-flop?
+
+Explain the difference between level-triggered and edge-triggered flip-flops.
+
+🔹 Intermediate Level
+What is the race-around condition?
+
+How is race-around condition avoided?
+
+Describe the working of a Master-Slave JK flip-flop.
+
+How can you convert a JK flip-flop to a T or D flip-flop?
+
+Write Verilog code for a JK flip-flop.
+
+🔹 Advanced/Practical Level
+How would you implement a 4-bit counter using JK flip-flops?
+
+Can JK flip-flop be used in FSM design? Why or why not?
+
+What are the propagation delays in a JK flip-flop?
+
+What are setup and hold times in flip-flops?
+
+Why is the JK flip-flop not widely used in modern digital design compared to D flip-flop?
