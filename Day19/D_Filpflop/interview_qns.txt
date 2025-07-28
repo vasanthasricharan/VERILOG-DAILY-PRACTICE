@@ -1,0 +1,29 @@
+🧠 Common Interview Questions
+💬 Conceptual Questions
+What is a D Flip-Flop and how does it work?
+
+What is the difference between a D latch and a D flip-flop?
+
+What are setup and hold times? Why are they important?
+
+What is metastability? How can you minimize it?
+
+What happens if D changes very close to the clock edge?
+
+How do you implement a D Flip-Flop in Verilog?
+
+What is the role of reset in flip-flops? Difference between sync and async reset?
+
+What is the default state of a flip-flop after power-on?
+
+💬 Verilog/RTL Coding Questions
+Write a D Flip-Flop in Verilog with synchronous reset.
+
+Modify the D Flip-Flop to include an enable pin.
+
+How do you write a testbench for a D Flip-Flop?
+
+How do you detect timing violations in simulation?
+
+How do you handle metastability in a clock domain crossing (CDC)?
+
