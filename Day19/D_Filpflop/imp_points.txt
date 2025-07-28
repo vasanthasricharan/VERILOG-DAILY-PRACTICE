@@ -1,0 +1,48 @@
+✅ Important Interview Points on D Flip-Flop
+Definition:
+
+A D (Data or Delay) Flip-Flop captures the value of the input D at the rising or falling edge of the clock and outputs it as Q.
+
+Basic Equation:
+
+Q(next) = D at the triggering clock edge.
+
+Edge Sensitivity:
+
+Flip-flops are edge-triggered (positive or negative edge), unlike latches which are level-sensitive.
+
+Reset Type:
+
+Can have asynchronous or synchronous resets.
+
+Asynchronous: Immediate reset (not dependent on clock).
+
+Synchronous: Reset on clock edge.
+
+Applications:
+
+Registers, pipelines, counters, memory elements, state machines.
+
+Metastability:
+
+If input D changes close to clock edge → undefined output for a short time.
+
+Hold and Setup Time:
+
+Setup time: Minimum time D should be stable before the clock edge.
+
+Hold time: Minimum time D should remain stable after the clock edge.
+
+Difference from Latch:
+
+Flip-flop: Edge-triggered.
+
+Latch: Level-sensitive.
+
+Timing Diagram Understanding:
+
+Be able to draw and analyze timing diagrams showing clk, D, and Q.
+
+Power and Area:
+
+Flip-flops consume more power than latches due to edge detection logic.
